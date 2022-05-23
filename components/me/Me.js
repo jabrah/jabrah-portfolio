@@ -18,6 +18,7 @@ export default function Me() {
         <ContactInfo></ContactInfo>
       </div>
       <div id="summary" className="space-y-4">
+        <p>Placeholder text...</p>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus erat quam, varius at dui a, 
           cursus tincidunt nulla. Morbi interdum suscipit tellus sit amet ullamcorper. Sed luctus libero 

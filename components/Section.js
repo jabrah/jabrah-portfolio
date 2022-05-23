@@ -1,9 +1,9 @@
 /**
  * Sort of like a 'Card', a descrete section of the doc
  */
-export default function Section({ children }) {
+export default function Section({ children, id }) {
   return (
-    <section id="me" className="my-16">
+    <section id={id} className="my-16">
       {children}
     </section>
   );

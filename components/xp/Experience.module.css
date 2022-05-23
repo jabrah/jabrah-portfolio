@@ -1,0 +1,6 @@
+.experience-item {
+  position: relative;
+}
+.experience-item span {
+  margin-left: -16px;
+}

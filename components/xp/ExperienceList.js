@@ -42,7 +42,7 @@ export default function ExperienceList() {
           jobTitle="Java Developer"
           timeline="Nov 2013 - July 2014"
           tech="Java, GWT, Spring"
-          logo="/images/Laureate_crop.svg"
+          logo="/images/Laureate_logo_crop.png"
         >
           <ul className="list-disc">
             <li>Leveraged REST and SOAP based web services to create web applications</li>
@@ -73,6 +73,31 @@ export default function ExperienceList() {
               and panning, and the display of annotations
             </li>
             <li>Implemented a full-text search service using Apache Solr</li>
+          </ul>
+        </Experience>
+        <Experience
+          employer="University of Maryland"
+          jobTitle="Research Assistant"
+          timeline="Feb 2010 - Nov 2012"
+          logo="/images/UMD_logo.jpg"
+        >
+          <ul className="list-disc">
+            <li>Developed UI for analyzing data from specialized electromagnetic experiments that allowed researchers to transform and output data in various formats</li>
+            <li>Programmed scripts in MATLAB to aid data analysis and data collection while conducting research</li>
+            <li>Conducted numerical simulations and data analysis for multiple experiments simultaneously</li>
+            <li>Provided documentation and support to scientists running data analysis scripts or numerical simulations</li>
+          </ul>
+        </Experience>
+        <Experience
+          employer="Argonne National Laboratory"
+          jobTitle="Intern"
+          timeline="June 2010 - Aug 2010"
+          logo="/images/ANL_logo_crop.png"
+        >
+          <ul className="list-disc">
+            <li>Developed C++ program for hardware control and data acquisition to let scientists characterize lasers according to their beam profiles</li>
+            <li>Preprocess data from the data acquisition software to be used in other data analysis tools</li>
+            <li>Communicate results regularly with physicists to iteratively improve data collection and analysis</li>
           </ul>
         </Experience>
       </ul>

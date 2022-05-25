@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import Me from '../components/me/Me';
 import Section from '../components/Section';
+import SkillsList from '../components/skills/SkillsList';
 import ExperienceList from '../components/xp/ExperienceList';
 
 export default function Home() {
@@ -11,11 +12,15 @@ export default function Home() {
       </Head>
       <main>
         <Section id="me">
-          <Me></Me>
+          <Me />
         </Section>
 
         <Section id="xp" title="Work Experience">
-          <ExperienceList></ExperienceList>
+          <ExperienceList />
+        </Section>
+
+        <Section id="skills" title="Technical Skills">
+          <SkillsList />
         </Section>
       </main>
     </div>

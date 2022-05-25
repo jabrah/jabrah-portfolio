@@ -18,6 +18,8 @@ module.exports = {
           400: '#1D3557',
         },
         'myred': '#E63946',
+        'react': '#61dafb',
+        'java': '#5382A1',
       },
     }
   },

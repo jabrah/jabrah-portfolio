@@ -1,11 +1,14 @@
-import EmberIcon from '../svg/ember';
+import IconFinder from "../svg/IconFinder";
 
-export default function Skill({ children, icon, link }) {
+export default function Skill({ children, link, icon, iWidth, iHeight, title }) {
+  iWidth = iWidth || 30;
+  iHeight = iHeight || 30;
+
   return (
-    <div className="rounded-md hover:shadow-lg">
+    <div className="rounded-md hover:shadow-lg" title={title}>
       <LinkWrapper link={link} className="flex space-y-2 p-6">
         <div className="">
-          <IconFinder icon={icon} width={30} height={30} />
+          <IconFinder icon={icon} width={iWidth} height={iHeight} />
         </div>
         <div className="italic">{children}</div>
       </LinkWrapper>
@@ -28,13 +31,4 @@ function LinkWrapper({ children, className, link }) {
       }
     </>
   );
-}
-
-function IconFinder({ icon, width, height }) {
-  switch (icon) {
-    case 'ember':
-      return <EmberIcon width={width} height={height} />;
-    default:
-      return <div className="w-7 h-7"></div>;
-  }
 }

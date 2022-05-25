@@ -6,14 +6,14 @@ export default function Experience({ children, employer, jobTitle, timeline, tec
     <li className={styles['experience-item']}>
       <Icon logo={logo} altText={`${jobTitle} @ ${employer} icon`} />
       <div className="grid gap-8 grid-cols-3 divide-x-4">
-        <div className="flex flex-col py-12 pr-8">
+        <div className="flex flex-col py-12 px-8">
           <h3 className="text-xl">{employer}</h3>
           <hr className="my-2 border-myblue-300" />
           <div className="font-bold">{jobTitle}</div>
           <div>{timeline}</div>
           <div className="mt-auto italic text-sm">{tech}</div>
         </div>
-        <div className="col-span-2 py-12 px-16 border-myblue-300">
+        <div className="col-span-2 py-12 pl-16 pr-8 border-myblue-300">
           {children}
         </div>
       </div>

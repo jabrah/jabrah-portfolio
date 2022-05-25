@@ -12,7 +12,7 @@ export default function ExperienceList() {
           jobTitle="Software Engineer"
           timeline="2014 - present"
           tech="EmberJS, Yarn, Javascript, Elasticsearch, REST, Java, RDF, JSON-LD, Docker, Apache Tomcat"
-          logo="/images/jh_logo.png"
+          logo="./images/jh_logo.png"
         >
           <ul className="list-disc">
             <li><strong>More to be added</strong></li>
@@ -41,7 +41,7 @@ export default function ExperienceList() {
           jobTitle="Java Developer"
           timeline="Nov 2013 - July 2014"
           tech="Java, GWT, Spring"
-          logo="/images/Laureate_logo_crop.png"
+          logo="./images/Laureate_logo_crop.png"
         >
           <ul className="list-disc">
             <li>Leveraged REST and SOAP based web services to create web applications</li>
@@ -60,7 +60,7 @@ export default function ExperienceList() {
           jobTitle="Software Developer"
           timeline="Feb 2013 - Oct 2013"
           tech="Java, GWT, Apache Tomcat, JSON-LD, RDF"
-          logo="/images/jh_logo.png"
+          logo="./images/jh_logo.png"
         >
           <ul className="list-disc">
             <li>Developed a GWT web application to demonstrate features of the Shared Canvas standard</li>
@@ -78,7 +78,7 @@ export default function ExperienceList() {
           employer="University of Maryland"
           jobTitle="Research Assistant"
           timeline="Feb 2010 - Nov 2012"
-          logo="/images/UMD_logo.jpg"
+          logo="./images/UMD_logo.jpg"
         >
           <ul className="list-disc">
             <li>Developed UI for analyzing data from specialized electromagnetic experiments that allowed researchers to transform and output data in various formats</li>
@@ -91,7 +91,7 @@ export default function ExperienceList() {
           employer="Argonne National Laboratory"
           jobTitle="Intern"
           timeline="June 2010 - Aug 2010"
-          logo="/images/ANL_logo_crop.png"
+          logo="./images/ANL_logo_crop.png"
         >
           <ul className="list-disc">
             <li>Developed C++ program for hardware control and data acquisition to let scientists characterize lasers according to their beam profiles</li>

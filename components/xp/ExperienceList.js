@@ -6,7 +6,6 @@ import Experience from './Experience';
 export default function ExperienceList() {
   return (
     <>
-      <h2 className="text-3xl my-10">Work Experience</h2>
       <ul className="flex flex-col space-y-0 text-myblue-100">
         <Experience 
           employer="Johns Hopkins University Sheridan Libraries"

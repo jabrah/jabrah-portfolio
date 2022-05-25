@@ -14,7 +14,7 @@ export default function Home() {
           <Me></Me>
         </Section>
 
-        <Section id="xp">
+        <Section id="xp" title="Work Experience">
           <ExperienceList></ExperienceList>
         </Section>
       </main>

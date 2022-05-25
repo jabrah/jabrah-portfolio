@@ -40,7 +40,7 @@ export default function IconFinder({ icon, width, height }) {
     case 'docker':
       return (
         // eslint-disable-next-line @next/next/no-img-element
-        <img src="/images/Docker-Logo-White-RGB_Vertical.png" alt="Docker logo" width={width} height={height}></img>
+        <img src="./images/Docker-Logo-White-RGB_Vertical.png" alt="Docker logo" width={width} height={height}></img>
       );
     default:
       return <div className="w-7 h-7"></div>;

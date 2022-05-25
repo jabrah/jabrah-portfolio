@@ -1,4 +1,3 @@
-import Image from 'next/image';
 import styles from './Experience.module.css';
 
 export default function Experience({ children, employer, jobTitle, timeline, tech, logo }) {
@@ -28,13 +27,15 @@ function Icon({ logo, altText }) {
   ].join(' ');
 
   const logoEl = !!logo && (
-    <Image
+    // Using standard <img> tag because static export does not support NextJS's <Image>
+    // eslint-disable-next-line @next/next/no-img-element
+    <img
       src={logo}
       alt={altText}
       height={100}
       width={100}
       className="rounded-full"
-    />
+    ></img>
   );
 
   return (

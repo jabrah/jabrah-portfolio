@@ -6,7 +6,6 @@ import NPMIcon from './npm';
 import YarnIcon from "./yarn";
 // import { FaNode } from 'react-icons/fa';
 import { FaJava, FaReact } from 'react-icons/fa';
-import Image from 'next/image';
 
 /**
  * I had considered using the `react-icons` package, which had most of
@@ -40,7 +39,8 @@ export default function IconFinder({ icon, width, height }) {
       return (<FaJava className="text-5xl text" />);
     case 'docker':
       return (
-        <Image src="/images/Docker-Logo-White-RGB_Vertical.png" alt="Docker logo" width={width} height={height} />
+        // eslint-disable-next-line @next/next/no-img-element
+        <img src="/images/Docker-Logo-White-RGB_Vertical.png" alt="Docker logo" width={width} height={height}></img>
       );
     default:
       return <div className="w-7 h-7"></div>;

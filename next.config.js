@@ -10,7 +10,8 @@ const nextConfig = {
    * 
    * https://nextjs.org/docs/api-reference/next.config.js/cdn-support-with-asset-prefix
    */
-  basePath: isProd ? '/jabrah-portfolio' : '',
+  // basePath: isProd ? '/jabrah-portfolio' : '', // Used for default GH Page URL (jabrah.github.io/jabrah-portfolio)
+  basePath: '',
   reactStrictMode: true,
 };
 

@@ -12,9 +12,7 @@ const nextConfig = {
    */
   // basePath: isProd ? '/jabrah-portfolio' : '', // Used for default GH Page URL (jabrah.github.io/jabrah-portfolio)
   basePath: '',
-  eslint: {
-    ignoreDuringBuilds: true
-  },
+  // eslint: { ignoreDuringBuilds: true },
   output: 'export',
   reactStrictMode: true,
 };

@@ -1,20 +1,48 @@
 import Experience from './Experience';
+import * as motion from "motion/react-client"
 
 /**
  * Playing around with passing props down
  */
 export default function ExperienceList() {
+  const listVariant = {
+    hidden: { opacity: 0 },
+    show: {
+      opacity: 1,
+      transition: { staggerChildren: 0.25 }
+    }
+  };
+
+  const itemVariant = {
+    hidden: { opacity: 0 },
+    show: {
+      opacity: 1,
+      transition: { staggerChildren: 0.1 }
+    }
+  };
+
+  const projectVariant = {
+    hidden: { opacity: 0 },
+    show: { opacity: 1 }
+  };
+
   return (
     <>
-      <ul className="flex flex-col space-y-0 text-myblue-100">
+      <motion.ul
+        className="flex flex-col space-y-0 text-myblue-100"
+        variants={listVariant}
+        initial="hidden"
+        animate="show"
+      >
         <Experience 
           employer="Johns Hopkins University Sheridan Libraries"
           jobTitle="Software Engineer"
           timeline="2014 - present"
           tech="EmberJS, Yarn, Javascript, Elasticsearch, REST, Java, RDF, JSON-LD, Docker, Apache Tomcat"
           logo="./images/jh_logo.png"
+          variants={itemVariant}
         >
-          <div className="project">
+          <motion.div className="project" variants={projectVariant}>
             <h3>
               <span className="italic">Project: </span>
               Library institutional repository and digital collections repository selection
@@ -26,9 +54,9 @@ export default function ExperienceList() {
               <li>Participate in user stakeholder group to determine requirements and analyse platforms against those 
               requirements</li>
             </ul>
-          </div>
+          </motion.div>
 
-          <div className="project">
+          <motion.div className="project" variants={projectVariant}>
             <h3>
               <span className="italic">Project: </span>
               <a href="https://www.lifexcode.org/k4bl" target="_blank">Keywords for Black Louisiana</a>
@@ -53,9 +81,9 @@ export default function ExperienceList() {
               <li>Write documentation and instruction for technical topics needed by project staff such as the use of git and 
               GitHub for the project's web site development</li>
             </ul>
-          </div>
+          </motion.div>
 
-          <div className="project">
+          <motion.div className="project" variants={projectVariant}>
             <h3>
               <span className="italic">Project: </span>
               IIIF support in JScholarship
@@ -69,9 +97,9 @@ export default function ExperienceList() {
               <li>Determine short term workaround and long term support plan</li>
               <li>Work with the DSpace community on long term support of custom IIIF manifest files</li>
             </ul>
-          </div>
+          </motion.div>
 
-          <div className="project">
+          <motion.div className="project" variants={projectVariant}>
             <h3>
               <span className="italic">Project: </span>
               Upgrade JScholarship, DSpace version 6.x to 7.6
@@ -85,9 +113,9 @@ export default function ExperienceList() {
               <li>Helped establish and debug UI update and deployment scripts</li>
               <li>Debugged DSpace configuration for searching and media viewing</li>
             </ul>
-          </div>
+          </motion.div>
 
-          <div className="project">
+          <motion.div className="project" variants={projectVariant}>
             <h3>
               <span className="italic">Project: </span>
               <a href="https://pass.jhu.edu/" target="_blank">Public Access Submission System (PASS)</a>
@@ -120,9 +148,9 @@ export default function ExperienceList() {
               <li>Reviewed project documentation to provide historic context for some design decisions</li>
               <li>Created the initial end to end testing system with another developer</li>
             </ul>
-          </div>
+          </motion.div>
 
-          <div className="project">
+          <motion.div className="project" variants={projectVariant}>
             <h3>
               <span className="italic">Project: </span>
               Islandorta for Digital Collections (IDC) at JHU
@@ -142,9 +170,9 @@ export default function ExperienceList() {
               <li>Ensured sufficient IIIF support in Drupal</li>
               <li>Worked with the Library Applications Group during a transition from development to support</li>
             </ul>
-          </div>
+          </motion.div>
 
-          <div className="project">
+          <motion.div className="project" variants={projectVariant}>
             <h3>
               <span className="italic">Project: </span>
               Annotation Interoperability
@@ -161,9 +189,9 @@ export default function ExperienceList() {
               </li>
               <li>Provided UI development guidance for a junior developer</li>
             </ul>
-          </div>
+          </motion.div>
 
-          <div className="project">
+          <motion.div className="project" variants={projectVariant}>
             <h3>
               <span className="italic">Project: </span>
               <a href="https://dlmm.library.jhu.edu/viewer" target="_blank">Digital Library of Medieval Manuscripts (DLMM)</a>
@@ -181,9 +209,9 @@ export default function ExperienceList() {
               </li>
               <li>Wrote tools to import data into the data archive</li>
             </ul>
-          </div>
+          </motion.div>
 
-          <div className="project">
+          <motion.div className="project" variants={projectVariant}>
             <h3>
               <span className="italic">Project: </span>
               <a href="https://archaeologyofreading.org/" target="_blank">Arcaeology of Reading</a>
@@ -204,9 +232,9 @@ export default function ExperienceList() {
                 margins of select early printed books
               </li>
             </ul>
-          </div>
+          </motion.div>
 
-          <div className="project">
+          <motion.div className="project" variants={projectVariant}>
             <h3>
               <span className="italic">Project: </span>
               Bible Historiale
@@ -219,7 +247,7 @@ export default function ExperienceList() {
               <li>Created a custom faceted search interface</li>
               <li>Indexed highly custom XML data with Solr</li>
             </ul>
-          </div>
+          </motion.div>
         </Experience>
         <Experience
           employer="Laureate Education"
@@ -227,6 +255,7 @@ export default function ExperienceList() {
           timeline="Nov 2013 - July 2014"
           tech="Java, GWT, Spring"
           logo="./images/Laureate_logo_crop.png"
+          variants={itemVariant}
         >
           <ul className="list-disc">
             <li>Leveraged REST and SOAP based web services to create web applications</li>
@@ -244,6 +273,7 @@ export default function ExperienceList() {
           timeline="Feb 2013 - Oct 2013"
           tech="Java, GWT, Apache Tomcat, JSON-LD, RDF"
           logo="./images/jh_logo.png"
+          variants={itemVariant}
         >
           <ul className="list-disc">
             <li>Developed a GWT web application to demonstrate features of the Shared Canvas standard</li>
@@ -261,6 +291,7 @@ export default function ExperienceList() {
           jobTitle="Research Assistant"
           timeline="Feb 2010 - Nov 2012"
           logo="./images/UMD_logo.jpg"
+          variants={itemVariant}
         >
           <ul className="list-disc">
             <li>Developed UI for analyzing data from specialized electromagnetic experiments that allowed researchers to transform and output data in various formats</li>
@@ -274,6 +305,7 @@ export default function ExperienceList() {
           jobTitle="Intern"
           timeline="June 2010 - Aug 2010"
           logo="./images/ANL_logo_crop.png"
+          variants={itemVariant}
         >
           <ul className="list-disc">
             <li>Developed C++ program for hardware control and data acquisition to let scientists characterize lasers according to their beam profiles</li>
@@ -281,7 +313,7 @@ export default function ExperienceList() {
             <li>Communicate results regularly with physicists to iteratively improve data collection and analysis</li>
           </ul>
         </Experience>
-      </ul>
+      </motion.ul>
     </>
   );
 };

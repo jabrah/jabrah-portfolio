@@ -1,8 +1,15 @@
 import styles from './Experience.module.css';
+import * as motion from "motion/react-client"
+// import { motion } from 'motion/react';
 
-export default function Experience({ children, employer, jobTitle, timeline, tech, logo }) {
+export default function Experience({ children, employer, jobTitle, timeline, tech, logo, variants }) {
   return (
-    <li className={styles['experience-item']}>
+    <motion.li 
+      className={styles['experience-item']}
+      variants={variants}
+      // initial={{ opacity: 0 }}
+      // animate={{ opacity: 1 }}
+    >
       <Icon logo={logo} altText={`${jobTitle} @ ${employer} icon`} />
       <div className="grid gap-8 grid-cols-3 divide-x-4">
         <div className="flex flex-col py-12 pl-0 pr-8">
@@ -16,7 +23,7 @@ export default function Experience({ children, employer, jobTitle, timeline, tec
           {children}
         </div>
       </div>
-    </li>
+    </motion.li>
   );
 }
 

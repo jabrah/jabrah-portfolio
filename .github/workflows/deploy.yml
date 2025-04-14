@@ -24,13 +24,13 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: "lts/*"
-          cache: "yarn"
+          cache: "npm"
       
       - name: Build
         run: |
-          yarn
-          yarn run build
-          yarn run export
+          npm install
+          npm run build
+          npm run export
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3

@@ -14,27 +14,212 @@ export default function ExperienceList() {
           tech="EmberJS, Yarn, Javascript, Elasticsearch, REST, Java, RDF, JSON-LD, Docker, Apache Tomcat"
           logo="./images/jh_logo.png"
         >
-          <ul className="list-disc">
-            <li><strong>More to be added</strong></li>
-            <li>
-              Worked with a junior front end developer and a senior backend developer as well as developers from 
-              our external partner to decide on API specifications and data formats
-            </li>
-            <li>Create custom plugins using React for the Mirador viewer - a IIIF viewer</li>
-            <li>Developed Java servlet to transform archive data into the IIIF standard</li>
-            <li>
-              Created command line utilities for importing and managing data, as well as validating scholarly 
-              generated XML data
-            </li>
-            <li>
-              Communicated regularly with another developer and several non-technical team members to report progress
-              and develop requirements
-            </li>
-            <li>Implemented custom features in the IIIF viewer jQuery application</li>
-            <li>Developed a custom full text search service using Apache Lucene</li>
-            <li>Wrote developer focused documentation in markdown</li>
-            <li>Utilized git and GitHub for version control</li>
-          </ul>
+          <div className="project">
+            <h3>
+              <span className="italic">Project: </span>
+              Library institutional repository and digital collections repository selection
+            </h3>
+            <ul className="list-disc ml-4">
+              <li>Technical lead for analysis and eventual selection of repository platforms</li>
+              <li>Coordinate the technical team to provide technical oriented analysis of several repository platforms to 
+              explore the technical feasibility for each</li>
+              <li>Participate in user stakeholder group to determine requirements and analyse platforms against those 
+              requirements</li>
+            </ul>
+          </div>
+
+          <div className="project">
+            <h3>
+              <span className="italic">Project: </span>
+              <a href="https://www.lifexcode.org/k4bl" target="_blank">Keywords for Black Louisiana</a>
+            </h3>
+            <div>
+              <span className="italic">Technology: </span>
+              Jekyll, Liquid template, Ruby, Javascript, HTML
+            </div>
+            <ul className="list-disc ml-4">
+              <li>
+                Successfully launch two sites to show research on&nbsp;
+                <a href="https://docs.k4bl.org/">documents</a> and the&nbsp;
+                <a href="">stories</a> they contain
+              </li>
+              <li>Creating and customizing markdown and Liquid templates to fit project needs </li>
+              <li>Customize Jekyll-based template sites: Wax and CollectionBuilder</li>
+              <li>Build requirements for the web sites and gather feedback from project researchers</li>
+              <li>Offer guidance to project staff in areas such as web site update planning, long term storage needs, 
+              project metadata structure</li>
+              <li>Help maintain continuity across project staffing changes and help prepare for project ownership change at 
+              the end of the project</li>
+              <li>Write documentation and instruction for technical topics needed by project staff such as the use of git and 
+              GitHub for the project's web site development</li>
+            </ul>
+          </div>
+
+          <div className="project">
+            <h3>
+              <span className="italic">Project: </span>
+              IIIF support in JScholarship
+            </h3>
+            <div>
+              <span className="italic">Technology: </span>
+              DSpace, Java, Angular, IIIF, Cantaloupe image server
+            </div>
+            <ul className="list-disc ml-4">
+              <li>Set and test DSpace configuration to enable IIIF support</li>
+              <li>Determine short term workaround and long term support plan</li>
+              <li>Work with the DSpace community on long term support of custom IIIF manifest files</li>
+            </ul>
+          </div>
+
+          <div className="project">
+            <h3>
+              <span className="italic">Project: </span>
+              Upgrade JScholarship, DSpace version 6.x to 7.6
+            </h3>
+            <div>
+              <span className="italic">Technology: </span>
+              DSpace, Angular, Javascript, Docker
+            </div>
+            <ul className="list-disc ml-4">
+              <li>Created custom DSpace theme for JScholarship</li>
+              <li>Helped establish and debug UI update and deployment scripts</li>
+              <li>Debugged DSpace configuration for searching and media viewing</li>
+            </ul>
+          </div>
+
+          <div className="project">
+            <h3>
+              <span className="italic">Project: </span>
+              <a href="https://pass.jhu.edu/" target="_blank">Public Access Submission System (PASS)</a>
+            </h3>
+            <div>
+              <span className="italic">Technology: </span>
+              Ember, Javascript, Java, GitHub Actions
+            </div>
+            <ul className="list-disc ml-4">
+              <li>Became the solo UI developer to shepherd the early prototype UI codebase through the initial launch</li>
+              <li>
+                Updated the PASS UI to new major versions of the Ember framework with another UI developer. 
+                This involved several aspects from refactoring UI components, updating the UI build tooling, 
+                to changing the UI testing harness
+              </li>
+              <li>
+                Refactored the PASS UI to communicate with backend APIs that were refactored to follow JSON:API 
+                specifications
+              </li>
+              <li>
+                Created the initial PASS projects' build and release automations using GitHub Actions based on 
+                analysis of the earlier manual release process
+              </li>
+              <li>Performed several application releases</li>
+              <li>Reviewed code changes and pull requests</li>
+              <li>
+                Provided task breakdowns, time estimates, and initial design documentation for UI changes and 
+                features for project manager
+              </li>
+              <li>Reviewed project documentation to provide historic context for some design decisions</li>
+              <li>Created the initial end to end testing system with another developer</li>
+            </ul>
+          </div>
+
+          <div className="project">
+            <h3>
+              <span className="italic">Project: </span>
+              Islandorta for Digital Collections (IDC) at JHU
+            </h3>
+            <div>
+              <span className="italic">Technology: </span>
+              Drupal, PHP, Javascript, Docker
+            </div>
+            <ul className="list-disc ml-4">
+              <li>Designed and implemented advanced search UI</li>
+              <li>
+                Analyzed use cases with project manager for UI feasibility, including providing task breakdowns 
+                and time estimates
+              </li>
+              <li>Configured aspects of Drupal to support UI use cases</li>
+              <li>Created initial site theme using a headless Drupal and custom Javascript frontend</li>
+              <li>Ensured sufficient IIIF support in Drupal</li>
+              <li>Worked with the Library Applications Group during a transition from development to support</li>
+            </ul>
+          </div>
+
+          <div className="project">
+            <h3>
+              <span className="italic">Project: </span>
+              Annotation Interoperability
+            </h3>
+            <div>
+              <span className="italic">Technology: </span>
+              React, Javascript, IIIF, Java
+            </div>
+            <ul className="list-disc ml-4">
+              <li>Provided development and feedback on backend APIs for interacting with target external systems</li>
+              <li>
+                Developed a Mirador plugin for simultaneous viewing of annotations from internal and external 
+                sources on the same item
+              </li>
+              <li>Provided UI development guidance for a junior developer</li>
+            </ul>
+          </div>
+
+          <div className="project">
+            <h3>
+              <span className="italic">Project: </span>
+              <a href="https://dlmm.library.jhu.edu/viewer" target="_blank">Digital Library of Medieval Manuscripts (DLMM)</a>
+            </h3>
+            <div>
+              <span className="italic">Technology: </span>
+              jQuery, Javascript, Java, IIIF
+            </div>
+            <ul className="list-disc ml-4">
+              <li>Created new viewing environment for the Roman de la Rose and Christine de Pizan collections using IIIF</li>
+              <li>Demonstrate developments with stakeholders and respond to feedback</li>
+              <li>
+                Supported another developer in developing a backend solution to dynamically generate IIIF manifests 
+                from original data
+              </li>
+              <li>Wrote tools to import data into the data archive</li>
+            </ul>
+          </div>
+
+          <div className="project">
+            <h3>
+              <span className="italic">Project: </span>
+              <a href="https://archaeologyofreading.org/" target="_blank">Arcaeology of Reading</a>
+            </h3>
+            <div>
+              <span className="italic">Technology: </span>
+              jQuery, Javascript, Java, IIIF
+            </div>
+            <ul className="list-disc ml-4">
+              <li>Heavily customized a Mirador 2 viewer to meet faculty requirements</li>
+              <li>
+                Communicated regularly with technical and non-technical team members to develop requirements 
+                and report progress
+              </li>
+              <li>Participated in backend development</li>
+              <li>
+                Helped create the data model to keep the project data representing handwritten annotations in the 
+                margins of select early printed books
+              </li>
+            </ul>
+          </div>
+
+          <div className="project">
+            <h3>
+              <span className="italic">Project: </span>
+              Bible Historiale
+            </h3>
+            <div>
+              <span className="italic">Technology: </span>
+              Java, GWT, Solr
+            </div>
+            <ul className="list-disc ml-4">
+              <li>Created a custom faceted search interface</li>
+              <li>Indexed highly custom XML data with Solr</li>
+            </ul>
+          </div>
         </Experience>
         <Experience
           employer="Laureate Education"
@@ -46,13 +231,11 @@ export default function ExperienceList() {
           <ul className="list-disc">
             <li>Leveraged REST and SOAP based web services to create web applications</li>
             <li>Implemented a SAML based single sign-on with Google services to enhance an existing web application</li>
-            <li>
-              <span className="italic pl-4">&lt;Past tense verb and something(s) you did&gt;</span> to maintain an existing
-              complex GWT web application
-            </li>
-            <li>Collaborated efficiently on a&nbsp;
-              <span className="italic pl-4">&lt;X&gt;</span> person team to handle a wide-range of technical responsibilities</li>
-            <li>Integrated a third-party payment system into a Spring MVC web application to introduce online payment capabilities</li>
+            <li>Enhanced and maintained an existing complex GWT web application</li>
+            <li>Communicated regularly with other development teams for different aspects of application development 
+            such as database management, middleware, and release management</li>
+            <li>Added payment capabilities to a Spring MVC based web application by integrating a third party payment 
+            system</li>
           </ul>
         </Experience>
         <Experience
@@ -64,7 +247,6 @@ export default function ExperienceList() {
         >
           <ul className="list-disc">
             <li>Developed a GWT web application to demonstrate features of the Shared Canvas standard</li>
-            <li>Used the Model-View-Controller design pattern to build web applications</li>
             <li>Created a service to serialize Shared Canvas data to JSON-LD or other commonly used RDF data formats</li>
             <li>Generated Shared Canvas test data as RDF and exposed it with a Java servlet</li>
             <li>

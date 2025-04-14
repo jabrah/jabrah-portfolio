@@ -17,7 +17,7 @@ export default function Me() {
         <h1 className="text-5xl text-myblue-200">John Abrahams</h1>
         <ContactInfo></ContactInfo>
       </div>
-      <div id="summary" className="space-y-4">
+      {/* <div id="summary" className="space-y-4">
         <p>Placeholder text...</p>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus erat quam, varius at dui a, 
@@ -39,7 +39,7 @@ export default function Me() {
           Vestibulum justo ante, porttitor non dolor pulvinar, rhoncus efficitur risus. Quisque eu diam a 
           felis cursus cursus vitae quis erat. Nullam tempor mi vitae tellus lobortis aliquet.
         </p>
-      </div>
+      </div> */}
     </div>
   );
 };

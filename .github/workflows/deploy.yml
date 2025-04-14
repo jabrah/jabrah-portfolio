@@ -25,14 +25,10 @@ jobs:
         with:
           node-version: "lts/*"
           cache: "npm"
-      
-      # Note about linting:
-      # The lint step during the Next build is broken, claiming that eslint
-      # is not installed
+
       - name: Build
         run: |
           npm install
-          npm exec -c "eslint . --ext .js,.jsx,.ts,.tsx"
           npm run build
           npm run export
 

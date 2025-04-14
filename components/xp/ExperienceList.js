@@ -59,7 +59,7 @@ export default function ExperienceList() {
           <motion.div className="project" variants={projectVariant}>
             <h3>
               <span className="italic">Project: </span>
-              <a href="https://www.lifexcode.org/k4bl" target="_blank">Keywords for Black Louisiana</a>
+              <a href="https://www.lifexcode.org/k4bl" target="_blank" rel="noreferrer">Keywords for Black Louisiana</a>
             </h3>
             <div>
               <span className="italic">Technology: </span>
@@ -79,7 +79,7 @@ export default function ExperienceList() {
               <li>Help maintain continuity across project staffing changes and help prepare for project ownership change at 
               the end of the project</li>
               <li>Write documentation and instruction for technical topics needed by project staff such as the use of git and 
-              GitHub for the project's web site development</li>
+              GitHub for the project&apos;s web site development</li>
             </ul>
           </motion.div>
 
@@ -118,7 +118,7 @@ export default function ExperienceList() {
           <motion.div className="project" variants={projectVariant}>
             <h3>
               <span className="italic">Project: </span>
-              <a href="https://pass.jhu.edu/" target="_blank">Public Access Submission System (PASS)</a>
+              <a href="https://pass.jhu.edu/" target="_blank" rel="noreferrer">Public Access Submission System (PASS)</a>
             </h3>
             <div>
               <span className="italic">Technology: </span>
@@ -136,7 +136,7 @@ export default function ExperienceList() {
                 specifications
               </li>
               <li>
-                Created the initial PASS projects' build and release automations using GitHub Actions based on 
+                Created the initial PASS projects&apos; build and release automations using GitHub Actions based on 
                 analysis of the earlier manual release process
               </li>
               <li>Performed several application releases</li>
@@ -194,7 +194,7 @@ export default function ExperienceList() {
           <motion.div className="project" variants={projectVariant}>
             <h3>
               <span className="italic">Project: </span>
-              <a href="https://dlmm.library.jhu.edu/viewer" target="_blank">Digital Library of Medieval Manuscripts (DLMM)</a>
+              <a href="https://dlmm.library.jhu.edu/viewer" target="_blank" rel="noreferrer">Digital Library of Medieval Manuscripts (DLMM)</a>
             </h3>
             <div>
               <span className="italic">Technology: </span>
@@ -214,7 +214,7 @@ export default function ExperienceList() {
           <motion.div className="project" variants={projectVariant}>
             <h3>
               <span className="italic">Project: </span>
-              <a href="https://archaeologyofreading.org/" target="_blank">Arcaeology of Reading</a>
+              <a href="https://archaeologyofreading.org/" target="_blank" rel="noreferrer">Arcaeology of Reading</a>
             </h3>
             <div>
               <span className="italic">Technology: </span>

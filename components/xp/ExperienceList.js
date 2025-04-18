@@ -43,7 +43,7 @@ export default function ExperienceList() {
           variants={itemVariant}
         >
           <motion.div className="project" variants={projectVariant}>
-            <h3>
+            <h3 className="text-myblue-200">
               <span className="italic">Project: </span>
               Library institutional repository and digital collections repository selection
             </h3>
@@ -57,7 +57,7 @@ export default function ExperienceList() {
           </motion.div>
 
           <motion.div className="project" variants={projectVariant}>
-            <h3>
+            <h3 className="text-myblue-200">
               <span className="italic">Project: </span>
               <a href="https://www.lifexcode.org/k4bl" target="_blank" rel="noreferrer">Keywords for Black Louisiana</a>
             </h3>
@@ -84,7 +84,7 @@ export default function ExperienceList() {
           </motion.div>
 
           <motion.div className="project" variants={projectVariant}>
-            <h3>
+            <h3 className="text-myblue-200">
               <span className="italic">Project: </span>
               IIIF support in JScholarship
             </h3>
@@ -100,7 +100,7 @@ export default function ExperienceList() {
           </motion.div>
 
           <motion.div className="project" variants={projectVariant}>
-            <h3>
+            <h3 className="text-myblue-200">
               <span className="italic">Project: </span>
               Upgrade JScholarship, DSpace version 6.x to 7.6
             </h3>
@@ -116,7 +116,7 @@ export default function ExperienceList() {
           </motion.div>
 
           <motion.div className="project" variants={projectVariant}>
-            <h3>
+            <h3 className="text-myblue-200">
               <span className="italic">Project: </span>
               <a href="https://pass.jhu.edu/" target="_blank" rel="noreferrer">Public Access Submission System (PASS)</a>
             </h3>
@@ -151,7 +151,7 @@ export default function ExperienceList() {
           </motion.div>
 
           <motion.div className="project" variants={projectVariant}>
-            <h3>
+            <h3 className="text-myblue-200">
               <span className="italic">Project: </span>
               Islandorta for Digital Collections (IDC) at JHU
             </h3>
@@ -173,7 +173,7 @@ export default function ExperienceList() {
           </motion.div>
 
           <motion.div className="project" variants={projectVariant}>
-            <h3>
+            <h3 className="text-myblue-200">
               <span className="italic">Project: </span>
               Annotation Interoperability
             </h3>
@@ -192,7 +192,7 @@ export default function ExperienceList() {
           </motion.div>
 
           <motion.div className="project" variants={projectVariant}>
-            <h3>
+            <h3 className="text-myblue-200">
               <span className="italic">Project: </span>
               <a href="https://dlmm.library.jhu.edu/viewer" target="_blank" rel="noreferrer">Digital Library of Medieval Manuscripts (DLMM)</a>
             </h3>
@@ -212,7 +212,7 @@ export default function ExperienceList() {
           </motion.div>
 
           <motion.div className="project" variants={projectVariant}>
-            <h3>
+            <h3 className="text-myblue-200">
               <span className="italic">Project: </span>
               <a href="https://archaeologyofreading.org/" target="_blank" rel="noreferrer">Arcaeology of Reading</a>
             </h3>
@@ -235,7 +235,7 @@ export default function ExperienceList() {
           </motion.div>
 
           <motion.div className="project" variants={projectVariant}>
-            <h3>
+            <h3 className="text-myblue-200">
               <span className="italic">Project: </span>
               Bible Historiale
             </h3>

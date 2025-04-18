@@ -3,8 +3,8 @@
  */
 export default function Section({ children, id, title }) {
   return (
-    <section id={id} className="my-16 px-12">
-      <h2 className="text-3xl my-10">{title}</h2>
+    <section id={id} className="my-8 px-12 py-8">
+      {title? <h2 className="text-3xl mb-10">{title}</h2> : ''}
       {children}
     </section>
   );
